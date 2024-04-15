@@ -32,5 +32,5 @@ localhost:8080
 * 소켓 구현
 * 로그인 구현
   
-## restapi
+## api 명세
 
