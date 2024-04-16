@@ -25,7 +25,6 @@ localhost:8080
 * node express
 * mongo db
 * mongoose
-* File upload
 * socket io
 * jwt login 구현
   
