@@ -19,6 +19,8 @@ npm start
 ```
 localhost:8080
 ```
+> .env 사용으로 프로젝트 정상 구동을 위해 DB_URI :mongodb url과, DECODED_TOKEN : 임의의 token 값을 설정해주신후에 구동해주시기 바랍니다.!
+
 ## 기술 스택
 * node express
 * mongo db
