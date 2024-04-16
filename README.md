@@ -33,4 +33,15 @@ localhost:8080
 * 로그인 구현
   
 ## api 명세
+|api|method|endpoint(url)|parameter|설명|
+|----|--|---|---|--|
+|auth|put|localhost:8080/auth/signup|{email:string, name:string, password:string }| 회원가입 api |
+|auth|post|localhost:8080/auth/login|{email:string, password:string }|로그인 api|
+|auth|get|localhost:8080/auth/status||jwt token을 통해 확인된 id|
+|auth|patch|localhost:8080/auth/status|{status, jwt Token}|상태 변경 api|
+|feed|put|localhost:8080/post/:postId|queryParameter(:postId)| 해당 게시물(postId) 수정 
+|feed|post|localhost:8080/post/:postId|queryParameter(:postId)|해당 게시물(postId) 생성|
+|feed|get|localhost:8080/post/:postId|queryParameter(:postId)|해당 게시물(postId) 조회|
+|feed|get|localhost:8080/posts||전체 게시물 조회|
+|feed|delete|localhost:8080/post/:postId|queryParameter(:postId)|해당 게시물(postId) 삭제|
 
